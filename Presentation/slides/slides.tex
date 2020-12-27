@@ -108,7 +108,7 @@ Reporter: Jiawei Shan \\[2mm]}
 
 }
 
-\date[December 10, 2020]{\footnotesize{December 10, 2020}}
+\date[December 30, 2020]{\footnotesize{December 30, 2020}}
 
 \begin{document}
 
@@ -118,11 +118,65 @@ Reporter: Jiawei Shan \\[2mm]}
 
 % \section{Introduction}
 
+% =========================================
 \begin{frame}{Introduction}
+
+{\bl What is Pixelization?}
+
+\pause
+
+\begin{figure}
+	\includegraphics[scale=0.23]{1.jpg}
+\end{figure}
 
 \end{frame}
 
 
+% =========================================
+\begin{frame}{Introduction}
+
+	{\bl What is Pixelization?}
+
+	\begin{figure}
+		\includegraphics[scale=0.25]{2.jpg}
+	\end{figure}
+\end{frame}
+
+% =========================================
+\begin{frame}{Introduction}
+
+\begin{itemize}
+	\item Pixelization describes the process of partially lowering the resolution of an image to censor information.
+	\item The \textbf{linear box filter} method is  commonly used to implement pixelization, which is simple and works fast.
+	\item A linear box filter takes a box of pixels, and overwrites the pixels with the average value of all pixels in the box.
+\end{itemize}
+
+~\pause
+
+Here is an illustation of the linear box filter:
+
+\begin{figure}
+	\includegraphics[scale=1.2]{example.png}
+	\caption{Illustration of the linear box filter.}
+\end{figure}
+
+\end{frame}
+
+% =========================================
+\begin{frame}{Introduction}
+
+Depix is a tool for recovering passwords from pixelized screenshots, and the image below shows one of the test results.
+\begin{figure}
+	\includegraphics[scale=0.23]{result.png}
+	\caption{Test result of Depix.}
+\end{figure}
+
+\end{frame}
+
+% ======================================
+\begin{frame}
+
+\end{frame}
 
 
 
