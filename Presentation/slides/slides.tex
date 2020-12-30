@@ -117,7 +117,16 @@ Reporter: Jiawei Shan \\[2mm]}
 \end{frame}
 
 % \section{Introduction}
+% =========================================
+\begin{frame}{Introduction}
 
+\begin{enumerate}
+	\item What is Pixelization?
+	\item How to implement pixelization?
+	\item How to recover from pixelization?
+\end{enumerate}
+
+\end{frame}
 % =========================================
 \begin{frame}{Introduction}
 
@@ -141,6 +150,7 @@ Reporter: Jiawei Shan \\[2mm]}
 		\includegraphics[scale=0.25]{2.jpg}
 	\end{figure}
 \end{frame}
+
 
 % =========================================
 \begin{frame}{Introduction}
@@ -177,7 +187,7 @@ Depix is a tool for recovering passwords from pixelized screenshots, and the ima
 % ===================================
 \begin{frame}{Algorithm description}
 \begin{itemize}
-	\item Since the linear box filter is a deterministic algorithm, pizelizing the same values will always result in the same pixelated block.
+	\item Since the linear box filter is a deterministic algorithm, pixelizing the same values will always result in the same pixelated block.
 	\item Pixelizing the same text - using the same locations of blocks - will result in the same block values.
 	\item We can try to pixelate text to find matching patterns.
 	\item This solution is quite simple: take a \textbf{De Bruijn sequence} of expected characters, paste it in the same editor, and make a screenshot of that. That screenshot is used as a lookup image for similar blocks.
